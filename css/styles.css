@@ -1,0 +1,78 @@
+/* -------------------------------------Universal----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ----------------------------------------Header------------------------------------------------- */
+
+header {
+    display: flex;
+    height: 100px;
+    margin: 15px;
+    background-color:rgba(142, 123, 39, 0.345);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.logo img {
+    height: 100%;
+    border-radius: 50px;
+}
+.contenedor-padre-navegacion {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.barra-navegacion {
+    display: flex;
+    margin: 15px;
+}
+.barra-navegacion li {
+    padding: 10px;
+    font-weight: 400;
+}
+
+/* ----------------------------------------Pie de página------------------------------------------------- */
+
+footer {
+    display: flex;
+    margin: 15px;
+    height: 90px;
+    background-color: rgba(142, 123, 39, 0.345);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.nombres-piedepagina {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin-left: 15px;
+}
+.nombres-piedepagina li {
+    padding: 0px 10px;
+    font-weight: 500;
+}
+.udesa-digitalhouse {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.udesa-digitalhouse img {
+    height: 100%;
+    border-radius: 50px;
+}
