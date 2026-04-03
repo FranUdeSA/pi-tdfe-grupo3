@@ -45,6 +45,52 @@ header {
     font-weight: 400;
 }
 
+/* ----------------------------------------Main------------------------------------------------- */
+main {
+    margin: 5%;
+}
+.titulos-home {
+    display: flex;
+    justify-content: center;
+    color: rgb(101, 62, 11);
+    background-color:rgba(118, 108, 75, 0.481);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* 1er sección: productos destacados */
+.productos-destacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+/* 2da sección: productos aleatorios */
+.productos-aleatorios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+article {
+    width: 30%;
+    margin: 15px 0px;
+}
+h3, h4 {
+    padding: 5px 0px;
+}
+.ver-detalle {
+    display: inline-block;
+    background-color: peru;
+    padding: 5px 2px;
+}
+
+/* -------------------------------------------Aside------------------------------------------------------ */
+
+
+
+
 /* ----------------------------------------Pie de página------------------------------------------------- */
 
 footer {
