@@ -145,4 +145,52 @@ footer {
 }
 
 /* --------------------------------------------------Forms (registro)------------------------------------------------- */
-
+#titulo-primernivel {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 30px;
+    color: #304b00;
+}
+form {
+    width: 50%;
+    margin: 0 auto 25px auto;             /* ---------- */
+    padding: 60px 80px;
+    background-color: #304b0080;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.informacion-individual {
+    display: block;
+    font-weight: 600;
+}
+.mail {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    padding: 4px;
+}
+.contraseña {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    padding: 4px;
+}
+#condiciones {
+    font-size: 15px;
+}
+.contenedor-registro {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+.button-registro {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f6fff6;
+}
+#tengo-cuenta {
+    color: #0b42b9;
+}

@@ -26,25 +26,25 @@
     <h1 id="titulo-primernivel">Registrarse</h1>
     <form action="./" method="get">
         <div>
-            <label for="mail">Email</label>
+            <label class="informacion-individual" for="mail">Email</label>
             <input class="mail"  type="email" name="mail" value="" required>
         </div>
         <div>
-            <label for="contraseña">Password</label>
+            <label class="informacion-individual" for="contraseña">Password</label>
             <input class="contraseña" type="password" name="contraseña" value="" required>
         </div>
         <div>
-            <label for="contraseña">Repetir contraseña</label>
+            <label class="informacion-individual" for="contraseña">Repetir contraseña</label>
             <input class="contraseña" type="password" name="contraseña" value="" required>
         </div>
         <div>
             <input type="checkbox" name="condiciones" value="Si">
-            <label for="condiciones">Acepto términos y condiciones</label>
+            <label id="condiciones" for="condiciones">Acepto términos y condiciones</label>
         </div>
-        <div>
-            <button type="submit">Registrarme</button>
+        <div class="contenedor-registro">
+            <button class="button-registro" type="submit">Registrarme</button>
         </div>
-        <a href="./login.html">Ya tengo una cuenta</a>
+        <a id="tengo-cuenta" href="./login.html">Ya tengo una cuenta</a>
     </form>
 
     <!-- ------------------------------------------------------------------------------- -->
