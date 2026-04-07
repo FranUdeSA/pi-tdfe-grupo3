@@ -244,7 +244,7 @@ form {
     background-color: rgba(118, 108, 75, 0.4);
     border-radius: 15px;
     padding: 10px;
-    width: 130%;
+    width: 100%;
 }
 .todo-p {
     width: 100%;
@@ -258,12 +258,12 @@ form {
 }
 .imagen-p {
     margin-right: 20px;
-    width: 100%;
+    width: 50%;
 }
 .contenido-texto{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 25%;
     justify-content: right;
     
 }
@@ -280,8 +280,8 @@ h2.h2-product {
     margin: 0px 20px;
     background-color: rgba(118, 108, 75, 0.4);
     border-radius: 20px;
-    width: 25%;
-    padding: 20px;
+    width: 50%;
+    padding: 10px;
 }
 .tags {
     display: flex;
