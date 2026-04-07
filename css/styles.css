@@ -228,46 +228,47 @@ form {
     display: flex;
     justify-content: center;
     color: rgb(101, 62, 11);
-    background-color: rgba(118, 108, 75, 0.481);
+    background-color: rgba(118, 108, 75, 0.4);
     border-radius: 15px;
     padding: 10px;
     width: 130%;
 }
-.foto-p {
-    width: 50%;
+.todo-p {
+    width: 100%;
+    display: flex;
+    
+}
+.p-product {
+ display: flex;
+ justify-content: space-between;   
+ padding: 20px;
 }
 .imagen-p {
-    display: flex;
     margin-right: 20px;
-    width: 250px;
+    width: 100%;
 }
 .contenido-texto{
     display: flex;
-    flex-direction: column;.
-    width: 25%;
+    flex-direction: column;
+    width: 50%;
+    justify-content: right;
+    
 }
 h2.h2-product {
     display: flex;
-    justify-content: right;
-    margin: 0px 20px;
+    padding: 10px;
+    background-color: rgba(118, 108, 75, 0.4);
+    border-radius: 20px;
     padding: 10px;
 }
-p.p-product {
-    display: flex;
-    justify-content: right;
-    margin: 0px 20px;
-}
-
-.descripcion-p {
-    margin-left: auto;
-    text-align: left;
-    width: 50%;
-}
-
 .precio-p {
     display: flex;
     justify-content: right;
     margin: 0px 20px;
+    background-color: rgba(118, 108, 75, 0.4);
+    border-radius: 20px;
+    width: 25%;
+    padding: 20px;
 }
 .tags {
     display: flex;
