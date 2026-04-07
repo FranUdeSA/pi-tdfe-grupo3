@@ -165,12 +165,25 @@ footer {
 }
 
 /* --------------------------------------------------Forms (registro)------------------------------------------------- */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 #titulo-primernivel {
     display: flex;
     justify-content: center;
     margin: 20px 0px;
     font-size: 30px;
     color: #304b00;
+}
+
+.contenedor-padre-formulario {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 form {
