@@ -241,49 +241,79 @@ form {
     display: flex;
     justify-content: center;
     color: rgb(101, 62, 11);
-    background-color: rgba(118, 108, 75, 0.4);
+    background-color: rgba(118, 108, 75, 0.481);
     border-radius: 15px;
     padding: 10px;
-    width: 100%;
 }
 .todo-p {
-    width: 100%;
     display: flex;
-    
+    justify-content: center;
+    margin: 20px 0px;
+    width: 100%;
+}
+.imagen-p{
+    width: 30%;
+    margin-right: 20px;
+}
+.h2-product {
+    display: flex;
+    background-color: rgba(118, 108, 75, 0.481);
+    border-radius: 15px;
+    padding: 10px;
+    width: 30%;
+    margin-bottom: 10px;
 }
 .p-product {
- display: flex;
- justify-content: space-between;   
- padding: 20px;
-}
-.imagen-p {
-    margin-right: 20px;
-    width: 50%;
-}
-.contenido-texto{
     display: flex;
-    flex-direction: column;
-    width: 25%;
-    justify-content: right;
-    
+    border-radius: 15px;
+    padding: 10px;
+    width: 30%;
+    border: 3px solid rgb(101, 62, 11);
+    background-color: rgba(118, 108, 75, 0.481);
 }
-h2.h2-product {
-    display: flex;
+.descripcion-p {
+display: flex;
     padding: 10px;
-    background-color: rgba(118, 108, 75, 0.4);
-    border-radius: 20px;
-    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    background-color: rgba(118, 108, 75, 0.481);
 }
 .precio-p {
     display: flex;
-    justify-content: right;
-    margin: 0px 20px;
-    background-color: rgba(118, 108, 75, 0.4);
-    border-radius: 20px;
-    width: 50%;
     padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 30%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
+    font-weight: bold
 }
-.tags {
+.p-categoria {
     display: flex;
-    justify-content: left;
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 40%;
+    border-radius: 15px;
+background-color: rgba(118, 108, 75, 0.481);
+}
+
+.stock-p {
+    display: flex;
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 51%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
+}
+ul.tags {
+    display: flex;}
+ul.tags li {
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 51%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
 }
