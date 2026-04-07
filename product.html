@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <header>
-        <section>
-            <img src="./pi-tdfe-grupo3/img/logo.png" alt="">
+        <section class="logo">
+            <img src="./img/logo.png" alt="">
         </section>
-        <nav>
-            <ul>
+        <nav class="contenedor-padre-navegacion">
+            <ul class="barra-navegacion">
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">Registro</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./registro.html">Registro</a></li>
+                <li><a href="">Formulario</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Perfume : Le Male Elixir</h2>
-        
-        <p>Marca : Jean Paul Gaultier</p>
-        
-        <p>Descripcion: Bomba ambarada de vainilla, miel y tabaco que proyecta una masculinidad opulenta, cálida y sumamente adictiva.
-           Rendimiento "beast mode" con más de 12 horas en piel, ideal para destacar en climas fríos y eventos nocturnos.
-           Es el flanker más potente de la línea, diseñado para quienes buscan una estela pesada que no pase desapercibida.</p>
-        <p>Precio: $290000</p>
-        
-        <img src="./img/foto-producto.jpg" alt="producto">
-        
+        <h1 class="titulos-product">Producto</h1>
+
+         <article class="foto-p">
+            <img class="imagen-p" src="./img/foto-producto.jpg" alt="producto">
+</article>
+            <div class="contenido-texto">
+                <h2 class="h2-product">Le Male Elixir</h2>
+
+                <p class="p-product">Jean Paul Gaultier</p>
+
+                <p class="descripcion-p">Bomba ambarada de vainilla, miel y tabaco que proyecta una masculinidad
+                    opulenta,
+                    cálida y
+                    sumamente adictiva.
+                    Rendimiento "beast mode" con más de 12 horas en piel, ideal para destacar en climas fríos y eventos
+                    nocturnos.
+                    Es el flanker más potente de la línea, diseñado para quienes buscan una estela pesada que no pase
+                    desapercibida.
+                </p>
+                <p class="precio-p">Precio: $290000</p>
+            </div>
+
+    
         <p>Categoria</p>
-           <nav>
+        <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./product.html">Productos</a></li>
+                <li><a href="./formulario.html">Contacto</a></li>
             </ul>
         </nav>
-        
+
         <h2>Stock</h2>
-        
+
         <h2>Tags</h2>
-            <ul>
-                <li>Tag</li>
-                <li>Tag</li>
-                <li>Tag</li>
-            </ul>
+        <ul class="tags">
+            <li>Tag</li>
+            <li>Tag</li>
+            <li>Tag</li>
+        </ul>
     </main>
     <!-- FALTA: sección de comentarios: rating - texto de comentario - fecha - nombre del usuario -->
     <footer class="pie-de-pagina">
@@ -57,4 +73,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
