@@ -317,3 +317,19 @@ ul.tags li {
     border-radius: 15px;
     background-color: rgba(118, 108, 75, 0.481);
 }
+/*------------------------------------Login--------------------------------------------------*/
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 30px;
+    color: #304b00;
+}
+.texto-login {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0px 5px 0px;
+    font-size: 15px;
+    color: #304b00;
+    font-weight: bold;
+}
