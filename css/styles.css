@@ -334,3 +334,16 @@ h1 {
     color: #304b00;
     font-weight: bold;
 }
+
+@media (max-width: 480px) {
+    .productos-destacados {
+        flex-direction: column;
+    
+    }
+    article{
+        width:auto;
+    }  
+    .navegacion-lateral{
+        padding: 5px;
+    }
+}
