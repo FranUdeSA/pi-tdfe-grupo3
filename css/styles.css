@@ -335,6 +335,38 @@ h1 {
     font-weight: bold;
 }
 
+.contenedorBuscador{
+    display: flex;
+    height: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgba(142, 123, 39, 0.345);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    align-items: center;
+    margin: 1.5%;
+    
+}
+
+.inputBuscador{
+    height: 30px;
+    width: 200px;
+}
+
+.botonBuscador{
+    height: 30px;
+    width: 200px;
+    background-color: #0b42b9;
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+    padding: 5px;
+}
+
 @media (max-width: 480px) {
     .productos-destacados {
         flex-direction: column;
@@ -347,3 +379,4 @@ h1 {
         padding: 5px;
     }
 }
+
