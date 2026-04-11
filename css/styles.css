@@ -187,9 +187,9 @@ body {
     justify-content: center;
 }
 
-form {
+.formulario-registro {
     width: 50%;
-    margin: 0 auto 25px auto;             
+    margin: 0 auto 25px auto;
     padding: 60px 80px;
     background-color: #304b0080;
     border-radius: 20px;
@@ -246,16 +246,19 @@ form {
     border-radius: 15px;
     padding: 10px;
 }
+
 .todo-p {
     display: flex;
     justify-content: center;
     margin: 20px 0px;
     width: 100%;
 }
-.imagen-p{
-    width: 30%;
+
+.imagen-p {
+    width: 50%;
     margin-right: 20px;
 }
+
 .h2-product {
     display: flex;
     background-color: rgba(118, 108, 75, 0.481);
@@ -264,6 +267,7 @@ form {
     width: 30%;
     margin-bottom: 10px;
 }
+
 .p-product {
     display: flex;
     border-radius: 15px;
@@ -272,13 +276,15 @@ form {
     border: 3px solid rgb(101, 62, 11);
     background-color: rgba(118, 108, 75, 0.481);
 }
+
 .descripcion-p {
-display: flex;
+    display: flex;
     padding: 10px;
     border: 3px solid rgb(101, 62, 11);
     margin-top: 10px;
     background-color: rgba(118, 108, 75, 0.481);
 }
+
 .precio-p {
     display: flex;
     padding: 10px;
@@ -289,6 +295,7 @@ display: flex;
     background-color: rgba(118, 108, 75, 0.481);
     font-weight: bold
 }
+
 .p-categoria {
     display: flex;
     padding: 10px;
@@ -296,7 +303,7 @@ display: flex;
     margin-top: 10px;
     width: 40%;
     border-radius: 15px;
-background-color: rgba(118, 108, 75, 0.481);
+    background-color: rgba(118, 108, 75, 0.481);
 }
 
 .stock-p {
@@ -308,8 +315,14 @@ background-color: rgba(118, 108, 75, 0.481);
     border-radius: 15px;
     background-color: rgba(118, 108, 75, 0.481);
 }
+.contenido-texto {
+    width:60%;
+}
+
 ul.tags {
-    display: flex;}
+    display: flex;
+}
+
 ul.tags li {
     padding: 10px;
     border: 3px solid rgb(101, 62, 11);
@@ -318,6 +331,21 @@ ul.tags li {
     border-radius: 15px;
     background-color: rgba(118, 108, 75, 0.481);
 }
+.review{
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 51%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
+}
+.review-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    width: 50%;
+}
+
 /*------------------------------------Login--------------------------------------------------*/
 h1 {
     display: flex;
@@ -326,6 +354,7 @@ h1 {
     font-size: 30px;
     color: #304b00;
 }
+
 .texto-login {
     display: flex;
     justify-content: flex-start;
@@ -335,7 +364,7 @@ h1 {
     font-weight: bold;
 }
 
-.contenedorBuscador{
+.contenedorBuscador {
     display: flex;
     height: 200px;
     padding-left: 200px;
@@ -349,15 +378,15 @@ h1 {
     border-bottom-right-radius: 50px;
     align-items: center;
     margin: 1.5%;
-    
+
 }
 
-.inputBuscador{
+.inputBuscador {
     height: 30px;
     width: 200px;
 }
 
-.botonBuscador{
+.botonBuscador {
     height: 30px;
     width: 200px;
     background-color: #0b42b9;
@@ -370,13 +399,34 @@ h1 {
 @media (max-width: 480px) {
     .productos-destacados {
         flex-direction: column;
-    
+
     }
-    article{
-        width:auto;
-    }  
-    .navegacion-lateral{
+
+    article {
+        width: auto;
+    }
+
+    .navegacion-lateral {
         padding: 5px;
     }
-}
 
+    .todo-p {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-p {
+        width: 100%;
+        margin-right: 0px;
+    }
+    
+    .h2-product,
+    .p-product,
+    .descripcion-p,
+    .precio-p,
+    .p-categoria,
+    .stock-p,
+    ul.tags li {
+        width: 100%;
+    }
+}
