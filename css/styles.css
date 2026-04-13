@@ -429,4 +429,7 @@ h1 {
     ul.tags li {
         width: 100%;
     }
+    .review {
+        width: 100%;
+    }
 }
