@@ -386,14 +386,8 @@ h1 {
     width: 200px;
 }
 
-.botonBuscador {
-    height: 30px;
-    width: 200px;
-    background-color: #0b42b9;
-    color: white;
-    border-radius: 100px;
-    text-align: center;
-    padding: 5px;
+.sinResultados{
+    display: none;
 }
 
 @media (max-width: 480px) {
