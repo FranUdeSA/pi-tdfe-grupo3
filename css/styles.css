@@ -12,7 +12,7 @@ ol {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: black;
 }
 
 /* ----------------------------------------Header------------------------------------------------- */
@@ -33,19 +33,19 @@ header {
 }
 
 
-.contenedor-padre-navegacion {
+.contenedorPadreNavegacion {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.barra-navegacion {
+.barraNavegacion {
     display: flex;
     margin: 15px;
 }
 
-.barra-navegacion li {
+.barraNavegacion li {
     padding: 10px;
     font-weight: 400;
 }
@@ -56,7 +56,7 @@ main {
     width: 75%;
 }
 
-.titulos-home {
+.titulosHome {
     display: flex;
     justify-content: center;
     color: rgb(101, 62, 11);
@@ -66,7 +66,7 @@ main {
 }
 
 /* 1er sección: productos destacados */
-.productos-destacados {
+.productosDestacados {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -74,7 +74,7 @@ main {
 }
 
 /* 2da sección: productos aleatorios */
-.productos-aleatorios {
+.productosAleatorios {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -89,16 +89,16 @@ article {
 h3,
 h4 {
     padding: 5px 0px;
+    margin-bottom: 5px;
 }
 
 .verDetalle {
-    display: inline-block;
     background-color: peru;
     padding: 5px 2px;
 }
 
 /* -------------------------------------------Aside------------------------------------------------------ */
-.contenedor-main-aside {
+.contenedorMainAside {
     display: flex;
     justify-content: center;
 }
@@ -107,12 +107,12 @@ aside {
     margin-top: 3%;
 }
 
-.navegacion-lateral {
+.navegacionLateral {
     background-color: rgb(146 114 9 / 42%);
     border-radius: 10px;
 }
 
-#titulo-categorias {
+#tituloCategorias {
     color: rgb(101, 62, 11);
     display: flex;
     justify-content: center;
@@ -142,25 +142,25 @@ footer {
     border-bottom-left-radius: 25px;
 }
 
-.nombres-piedepagina {
+.nombresPieDePagina {
     display: flex;
     width: 50%;
     align-items: center;
     margin-left: 15px;
 }
 
-.nombres-piedepagina li {
+.nombresPieDePagina li {
     padding: 0px 10px;
     font-weight: 500;
 }
 
-.udesa-digitalhouse {
+.udesaDigitalHouse {
     width: 50%;
     display: flex;
     justify-content: flex-end;
 }
 
-.udesa-digitalhouse img {
+.udesaDigitalHouse img {
     height: 100%;
     border-radius: 50px;
 }
@@ -172,7 +172,7 @@ body {
     justify-content: space-between;
 }
 
-#titulo-primernivel {
+#tituloPrimerNivel {
     display: flex;
     justify-content: center;
     margin: 20px 0px;
@@ -180,14 +180,14 @@ body {
     color: #304b00;
 }
 
-.contenedor-padre-formulario {
+.contenedorPadreFormulario {
     height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.formulario-registro {
+.formularioRegistroLogin {
     width: 50%;
     margin: 0 auto 25px auto;
     padding: 60px 80px;
@@ -197,7 +197,7 @@ body {
     flex-direction: column;
 }
 
-.informacion-individual {
+.informacionIndividual {
     display: block;
     font-weight: 600;
 }
@@ -220,25 +220,25 @@ body {
     font-size: 15px;
 }
 
-.contenedor-registro {
+.contenedorRegistro {
     margin: 10px 0px;
     display: flex;
     justify-content: center;
 }
 
-.button-registro {
+.botonRegistro {
     padding: 8px;
     border-radius: 5px;
     border: none;
     background-color: #f6fff6;
 }
 
-#tengo-cuenta {
+#tengoCuenta {
     color: #0b42b9;
 }
 
 /* -------------------------------------------------------Product------------------------------------------------------ */
-.titulos-product {
+.titulosProduct {
     display: flex;
     justify-content: center;
     color: rgb(101, 62, 11);
@@ -247,24 +247,24 @@ body {
     padding: 10px;
 }
 
-.todo-p {
+.todoP {
     display: flex;
     justify-content: center;
     margin: 20px 0px;
     width: 100%;
 }
 
-.imagen-p {
+.imagenP {
     width: 50%;
     margin-right: 20px;
 }
 
-.h2-product {
+.h2Product {
     display: flex;
     flex-direction: column;
     width: 25%;
 }
-h2.h2-product {
+h2.h2Product {
     display: flex;
     border-radius: 15px;
     padding: 10px;
@@ -273,7 +273,7 @@ h2.h2-product {
     background-color: rgba(118, 108, 75, 0.481);
 }
 
-.descripcion-p {
+.descripcionP {
     display: flex;
     padding: 10px;
     border: 3px solid rgb(101, 62, 11);
@@ -281,7 +281,7 @@ h2.h2-product {
     background-color: rgba(118, 108, 75, 0.481);
 }
 
-.precio-p {
+.precioP {
     display: flex;
     padding: 10px;
     border: 3px solid rgb(101, 62, 11);
@@ -292,7 +292,7 @@ h2.h2-product {
     font-weight: bold
 }
 
-.p-categoria {
+.categoriaP {
     display: flex;
     padding: 10px;
     border: 3px solid rgb(101, 62, 11);
@@ -302,7 +302,7 @@ h2.h2-product {
     background-color: rgba(118, 108, 75, 0.481);
 }
 
-.stock-p {
+.stockP {
     display: flex;
     padding: 10px;
     border: 3px solid rgb(101, 62, 11);
@@ -311,7 +311,7 @@ h2.h2-product {
     border-radius: 15px;
     background-color: rgba(118, 108, 75, 0.481);
 }
-.contenido-texto {
+.contenidoTexto {
     width:60%;
 }
 
@@ -335,7 +335,7 @@ ul.tags li {
     border-radius: 15px;
     background-color: rgba(118, 108, 75, 0.481);
 }
-.review-form {
+.reviewForm {
     display: flex;
     flex-direction: column;
     margin: 20px 0px;
@@ -351,7 +351,7 @@ h1 {
     color: #304b00;
 }
 
-.texto-login {
+.textoLogin {
     display: flex;
     justify-content: flex-start;
     margin: 10px 0px 5px 0px;
@@ -387,7 +387,7 @@ h1 {
 }
 
 @media (max-width: 480px) {
-    .productos-destacados {
+    .productosDestacados {
         flex-direction: column;
 
     }
@@ -396,26 +396,26 @@ h1 {
         width: auto;
     }
 
-    .navegacion-lateral {
+    .navegacionLateral {
         padding: 5px;
     }
 
-    .todo-p {
+    .todoP {
         flex-direction: column;
         align-items: center;
     }
 
-    .imagen-p {
+    .imagenP {
         width: 100%;
         margin-right: 0px;
     }
     
-    .h2-product,
+    .h2Product,
     .p-product,
-    .descripcion-p,
-    .precio-p,
-    .p-categoria,
-    .stock-p,
+    .descripcionP,
+    .precioP,
+    .categoriaP,
+    .stockP,
     ul.tags li {
         width: 100%;
     }
