@@ -32,6 +32,7 @@ header {
     border-radius: 50px;
 }
 
+
 .contenedor-padre-navegacion {
     width: 100%;
     display: flex;
@@ -186,9 +187,9 @@ body {
     justify-content: center;
 }
 
-form {
+.formulario-registro {
     width: 50%;
-    margin: 0 auto 25px auto;             
+    margin: 0 auto 25px auto;
     padding: 60px 80px;
     background-color: #304b0080;
     border-radius: 20px;
@@ -244,45 +245,181 @@ form {
     background-color: rgba(118, 108, 75, 0.481);
     border-radius: 15px;
     padding: 10px;
-    width: 130%;
 }
-.foto-p {
-    width: 50%;
-}
-.imagen-p {
+
+.todo-p {
     display: flex;
-    margin-right: 20px;
-    width: 250px;
+    justify-content: center;
+    margin: 20px 0px;
+    width: 100%;
 }
-.contenido-texto{
+
+.imagen-p {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.h2-product {
     display: flex;
     flex-direction: column;
     width: 25%;
 }
 h2.h2-product {
     display: flex;
-    justify-content: right;
-    margin: 0px 20px;
+    border-radius: 15px;
     padding: 10px;
-}
-p.p-product {
-    display: flex;
-    justify-content: right;
-    margin: 0px 20px;
+    width: 30%;
+    border: 3px solid rgb(101, 62, 11);
+    background-color: rgba(118, 108, 75, 0.481);
 }
 
 .descripcion-p {
-    margin-left: auto;
-    text-align: left;
-    width: 50%;
+    display: flex;
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    background-color: rgba(118, 108, 75, 0.481);
 }
 
 .precio-p {
     display: flex;
-    justify-content: right;
-    margin: 0px 20px;
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 30%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
+    font-weight: bold
 }
-.tags {
+
+.p-categoria {
     display: flex;
-    justify-content: left;
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 40%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
+}
+
+.stock-p {
+    display: flex;
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 51%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
+}
+.contenido-texto {
+    width:60%;
+}
+
+ul.tags {
+    display: flex;
+}
+
+ul.tags li {
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 51%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
+}
+.review{
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 51%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
+}
+.review-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    width: 50%;
+}
+
+/*------------------------------------Login--------------------------------------------------*/
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 30px;
+    color: #304b00;
+}
+
+.texto-login {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0px 5px 0px;
+    font-size: 15px;
+    color: #304b00;
+    font-weight: bold;
+}
+
+.contenedorBuscador {
+    display: flex;
+    height: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgba(142, 123, 39, 0.345);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    align-items: center;
+    margin: 1.5%;
+
+}
+
+.inputBuscador {
+    height: 30px;
+    width: 200px;
+}
+
+.sinResultados{
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .productos-destacados {
+        flex-direction: column;
+
+    }
+
+    article {
+        width: auto;
+    }
+
+    .navegacion-lateral {
+        padding: 5px;
+    }
+
+    .todo-p {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-p {
+        width: 100%;
+        margin-right: 0px;
+    }
+    
+    .h2-product,
+    .p-product,
+    .descripcion-p,
+    .precio-p,
+    .p-categoria,
+    .stock-p,
+    ul.tags li {
+        width: 100%;
+    }
+    .review {
+        width: 100%;
+    }
 }

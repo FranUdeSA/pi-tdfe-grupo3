@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
      <header>
         <section class="logo">
@@ -14,20 +16,28 @@
 
         <nav class="contenedor-padre-navegacion">
             <ul class="barra-navegacion">
-                <li><a href="">Home</a></li>
-                <li><a href="">Login</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./login.html">Login</a></li>
                 <li><a href="./registro.html">Registro</a></li>
+                <li>
+                    <input type="search" placeholder="Buscar..">
+                    <a href="./resultadosBusqueda.html">Buscar</a>
+                </li>
                 <!-- FALTA "Formulario con buscador" -->
             </ul>
         </nav>
     </header>
-<h1>Login</h1>
-<form action="./index.html" method="get">
-<input type="email" name="email" placeholder="Email">
-<input type="password" name="password" placeholder="Password">
-<input type="submit" value="Login">
-</form>
-<footer>
+    <h1>Login</h1>
+    <form class="formulario-registro"  action="./index.html" method="get">
+        <p class="texto-login">Usuario</p>
+        <input type="email" name="email" placeholder="Email">
+        <p class="texto-login">Contraseña</p>
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" value="Login">
+        <a id="tengo-cuenta" href="./registro.html">No tengo cuenta</a>
+    </form>
+    
+    <footer>
         <ul class="nombres-piedepagina">
             <li>Franco Dragani</li>
             <li>Michelle Zac</li>
@@ -39,4 +49,5 @@
         </div>
     </footer>
 </body>
+
 </html>

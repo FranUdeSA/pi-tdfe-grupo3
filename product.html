@@ -4,73 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Detalle Producto</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <header>
+     <header>
         <section class="logo">
-            <img src="./img/logo.png" alt="">
+            <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
         </section>
+
         <nav class="contenedor-padre-navegacion">
             <ul class="barra-navegacion">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./login.html">Login</a></li>
                 <li><a href="./registro.html">Registro</a></li>
-                <li><a href="">Formulario</a></li>
+                <li>
+                    <input type="search" placeholder="Buscar..">
+                    <a href="./resultadosBusqueda.html">Buscar</a>
+                </li>
+                <!-- FALTA "Formulario con buscador" -->
             </ul>
         </nav>
     </header>
-    <main>
-        <h1 class="titulos-product">Producto</h1>
+    <div class="contenedor-main-aside">
+        <main>
+            <h1 class="titulos-product">Producto</h1>
 
-         <article class="foto-p">
-            <img class="imagen-p" src="./img/foto-producto.jpg" alt="producto">
-</article>
-            <div class="contenido-texto">
-                <h2 class="h2-product">Le Male Elixir</h2>
+            <article class="todo-p">
+                <img class="imagen-p" src="./img/foto-producto.jpg" alt="producto">
 
-                <p class="p-product">Jean Paul Gaultier</p>
+                <div class="contenido-texto">
+                    <h2 class="h2-product">Le Male Elixir</h2>
 
-                <p class="descripcion-p">Bomba ambarada de vainilla, miel y tabaco que proyecta una masculinidad
-                    opulenta,
-                    cálida y
-                    sumamente adictiva.
-                    Rendimiento "beast mode" con más de 12 horas en piel, ideal para destacar en climas fríos y eventos
-                    nocturnos.
-                    Es el flanker más potente de la línea, diseñado para quienes buscan una estela pesada que no pase
-                    desapercibida.
-                </p>
-                <p class="precio-p">Precio: $290000</p>
+                    <p class="p-product">Jean Paul Gaultier</p>
+
+                    <p class="descripcion-p">Bomba ambarada de vainilla, miel y tabaco que proyecta una masculinidad
+                        opulenta,
+                        cálida y
+                        sumamente adictiva.
+                        Rendimiento "beast mode" con más de 12 horas en piel, ideal para destacar en climas fríos y
+                        eventos
+                        nocturnos.
+                        Es el flanker más potente de la línea, diseñado para quienes buscan una estela pesada que no
+                        pase
+                        desapercibida.
+                    </p>
+                    <p class="precio-p">Precio: $290000</p>
+                    <p class="p-categoria">Categoria : Mens Accesories</p>
+
+                    <h2 class="stock-p">Stock: 5 unidades Restantes</h2>
+
+                    <ul class="tags">
+                        <li class="tag-1"><a href="./category.html">Home Decoration</a></li>
+                        <li class="tag-2"><a href="./category.html">Fragrances</a></li>
+                        <li class="tag-3"><a href="./category.html">Beauty</a></li>
+                    </ul>
+                    <div class="review">
+                        <p>Juan Perez</p>
+                        <p>10/04/2026</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p>Muy buen producto, me encantó!</p>
+                    </div>
+                    <div class="review">
+                        <p>Maria Gomez</p>
+                        <p>12/04/2026</p>
+                        <p>⭐⭐⭐⭐</p>
+                        <p>Excelente fragancia, aunque un poco fuerte para mi gusto.</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <aside>
+            <div class="navegacion-lateral">
+                <h2 id=titulo-categorias>Categorías</h2>
+                <ul class="categorias">
+                    <li><a href="./category.html">beauty</a></li>
+                    <li><a href="./category.html">fragrances</a></li>
+                    <li><a href="./category.html">furniture</a></li>
+                    <li><a href="./category.html">groceries</a></li>
+                    <li><a href="./category.html">home decoration</a></li>
+                    <li><a href="./category.html">kitchen accesories</a></li>
+                    <li><a href="./category.html">laptops</a></li>
+                    <li><a href="./category.html">mens shirts</a></li>
+                    <li><a href="./category.html">mens shoes</a></li>
+                    <li><a href="./category.html">mens watches</a></li>
+                    <li><a href="./category.html">mobile accesories</a></li>
+                    <li><a href="./category.html">motorcycle</a></li>
+                    <li><a href="./category.html">skin care</a></li>
+                    <li><a href="./category.html">smartphones</a></li>
+                    <li><a href="./category.html">sports accesories</a></li>
+                    <li><a href="./category.html">sunglasses</a></li>
+                    <li><a href="./category.html">tablets</a></li>
+                    <li><a href="./category.html">tops</a></li>
+                    <li><a href="./category.html">vehicle</a></li>
+                    <li><a href="./category.html">womens bags</a></li>
+                    <li><a href="./category.html">womens dresses</a></li>
+                    <li><a href="./category.html">womens jewellery</a></li>
+                    <li><a href="./category.html">womens shoes</a></li>
+                    <li><a href="./category.html">womens watches</a></li>
+                </ul>
             </div>
-
-    
-        <p>Categoria</p>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./product.html">Productos</a></li>
-                <li><a href="./formulario.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <h2>Stock</h2>
-
-        <h2>Tags</h2>
-        <ul class="tags">
-            <li>Tag</li>
-            <li>Tag</li>
-            <li>Tag</li>
-        </ul>
-    </main>
-    <!-- FALTA: sección de comentarios: rating - texto de comentario - fecha - nombre del usuario -->
-    <footer class="pie-de-pagina">
-        <ul>
+        </aside>
+    </div>
+    <footer>
+        <ul class="nombres-piedepagina">
             <li>Franco Dragani</li>
             <li>Michelle Zac</li>
             <li>Joaquin Pedernera</li>
         </ul>
+        <div class="udesa-digitalhouse">
+            <img src="./img/UdeSA.png" alt="Universidad de San Andrés">
+            <img src="./img/digitalHouse.png" alt="Digital House">
+        </div>
     </footer>
 </body>
 

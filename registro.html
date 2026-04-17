@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <header>
+     <header>
         <section class="logo">
             <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
         </section>
@@ -17,7 +19,10 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./login.html">Login</a></li>
                 <li><a href="./registro.html">Registro</a></li>
-                <!-- FALTA "Formulario con buscador" -->
+                <li>
+                    <input type="search" placeholder="Buscar..">
+                    <a href="./resultadosBusqueda.html">Buscar</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -25,10 +30,10 @@
 
     <div class="contenedor-padre-formulario">
         <h1 id="titulo-primernivel">Registrarse</h1>
-        <form action="./login.html" method="get">
+        <form  class="formulario-registro" action="./login.html" method="get">
             <div>
                 <label class="informacion-individual" for="mail">Email</label>
-                <input class="mail"  type="email" name="mail" value="" required>
+                <input class="mail" type="email" name="mail" value="" required>
             </div>
             <div>
                 <label class="informacion-individual" for="contraseña">Password</label>
@@ -62,4 +67,5 @@
         </div>
     </footer>
 </body>
+
 </html>
