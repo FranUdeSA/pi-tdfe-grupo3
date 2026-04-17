@@ -90,7 +90,7 @@ h4 {
     padding: 5px 0px;
 }
 
-.ver-detalle {
+.verDetalle {
     display: inline-block;
     background-color: peru;
     padding: 5px 2px;
@@ -256,7 +256,7 @@ form {
 }
 .contenido-texto{
     display: flex;
-    flex-direction: column;.
+    flex-direction: column;
     width: 25%;
 }
 h2.h2-product {
