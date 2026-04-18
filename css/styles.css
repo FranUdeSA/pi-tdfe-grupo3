@@ -388,12 +388,10 @@ h1 {
 
 @media (max-width: 480px) {
     /* -------------------------Header-------------------------------------- */
-    
     header{
         flex-direction: column;
         height: auto;
         align-items: center;
-        width: fit-content;
         margin: auto;
     }
     
@@ -468,7 +466,7 @@ h1 {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        width: fit-content;
+        width: 75%;
     }
     .nombresPieDePagina {
         margin-top: 10px;
@@ -485,5 +483,11 @@ h1 {
     }
     .udesaDigitalHouse img {
         width: 20%;
+    }
+
+    /* ------------------Registro------------------------------- */
+    .formularioRegistroLogin {
+        width: 85%;
+        margin-bottom: 40px;
     }
 }
