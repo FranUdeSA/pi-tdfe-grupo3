@@ -398,6 +398,8 @@ h1 {
         height: auto;
         align-items: center;
         margin: auto;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
     }
     
     .logo img {
@@ -472,6 +474,8 @@ h1 {
         align-items: center;
         margin: 0 auto;
         width: 75%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
     }
     .nombresPieDePagina {
         margin-top: 10px;
