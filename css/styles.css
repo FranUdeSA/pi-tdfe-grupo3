@@ -50,6 +50,13 @@ header {
     font-weight: 400;
 }
 
+.contenedorBarraBuscar{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+}
+
 /* ----------------------------------------Main------------------------------------------------- */
 main {
     margin: 3% 5% 3% 1.5%;
@@ -185,16 +192,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .formularioRegistroLogin {
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    margin: 0 auto 25px auto;
+    margin-bottom: 25px;
     padding: 60px 80px;
     background-color: #304b0080;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
 }
 
 .informacionIndividual {
@@ -262,14 +270,14 @@ body {
 .h2Product {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 25%;                             /* Por este. */
 }
 h2.h2Product {
     display: flex;
     border-radius: 15px;
     padding: 10px;
     border: 3px solid rgb(101, 62, 11);
-    background-color: rgba(118, 108, 75, 0.481);
+    background-color: rgba(118, 108, 75, 0.481);  /* Por qué dos selectores .h2Product y h2.h2Product? No es redundante? */
 }
 .p-product {
     display: flex;
@@ -423,20 +431,16 @@ h1 {
         align-items: center;
     }
 
-    .contenedorBarraBuscador {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 5px;
-    }
-
-    #barraBuscador {
-        width: 50%;
-    }
+    .contenedorBarraBuscar {
+        padding-bottom: 5px;
+        width: 60%;
+    } 
 
     #buscar {
         font-weight: bold;
     }
+
+
     /* --------------------------------Producto-------------------------------- */
 
     .productosDestacados {
@@ -463,9 +467,6 @@ h1 {
     }
     
     .h2Product {
-        width: 100%;
-    }
-    .h2Product{
         width: 100%;
     }
 
