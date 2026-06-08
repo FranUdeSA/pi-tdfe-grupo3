@@ -245,6 +245,16 @@ body {
     color: #0b42b9;
 }
 
+.error-feedback-mail, 
+.error-feedback-password, 
+.error-feedback-rePassword 
+{
+    color: red;
+    font-size: 12px; /* Opcional, para que quede un poco más chico */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 /* -------------------------------------------------------Product------------------------------------------------------ */
 .titulosProduct {
     display: flex;

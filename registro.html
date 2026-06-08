@@ -34,20 +34,24 @@
         <form class="formularioRegistroLogin" action="./login.html" method="get">
             <div>
                 <label class="informacionIndividual" for="mail">Email</label>
-                <input class="mail" type="email" name="mail" value="" required>
+                <input type="email" name="mail" value="" id = "email" class="mail">
+                <div class="error-feedback-mail"></div>
             </div>
             <div>
                 <label class="informacionIndividual" for="contrasenna">Password</label>
-                <input class="contrasenna" type="password" name="contrasenna" value="" required>
+                <input type="password" name="contrasenna" value="" id = 'password' class="contrasenna">
+                <div class="error-feedback-password"></div>
             </div>
             <div>
                 <label class="informacionIndividual" for="contrasennaRepeticion">Repetir contraseña</label>
-                <input class="contrasenna" type="password" name="contrasennaRepeticion" value="" required>
+                <input type="password" name="contrasennaRepeticion" value="" id = 'rePassword' class="contrasenna">
+                <div class="error-feedback-rePassword"></div>
             </div>
             <div>
-                <input type="checkbox" name="condiciones" value="Si">
+                <input type="checkbox" name="condiciones" value="Si" id = 'terminosCondiciones'>
                 <label id="condiciones" for="condiciones">Acepto términos y condiciones</label>
-            </div>
+                <div class="error-feedback-condiciones"></div>
+            </div> 
             <div class="contenedorRegistro">
                 <button class="botonRegistro" type="submit">Registrarme</button>
             </div>
@@ -67,6 +71,8 @@
             <img src="./img/digitalHouse.png" alt="Digital House">
         </section>
     </footer>
+
+    <script src="./js/registro.js"></script>
 </body>
 
 </html>
