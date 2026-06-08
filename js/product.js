@@ -1,18 +1,25 @@
 /*--API--*/
-let url = "https://dummyjson.com/products/10"
+let queryString = window.location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let id = queryStringObj.get('id');
+let url = `https://dummyjson.com/products/${id}`;
+
+/*--Api para el Aside--*/
+let urlCat = 'https://dummyjson.com/products/category-list';
+let categorias = document.querySelector('.categorias');
 
 /* -------------------------Imagen------------------------------------- */
-let imagenProducto = document.querySelector("#imagenProducto")
+let imagenProducto = document.querySelector(".imagenP")
 
 /* -------------------------Producto-------------------------------------- */
-let nombreProducto = document.querySelector("#nombreProducto")
-let  marcaProducto = document.querySelector("#marcaProducto")
-let descripcionProducto = document.querySelector("#descripcionProducto")
-let precioProducto = document.querySelector("#precioProducto")
-let categoriaProducto = document.querySelector("#categoriaProducto")
-let stockProducto = document.querySelector("#stockProducto")
-let tagsProducto = document.querySelector("#tagsProducto")
-let reviewProducto = document.querySelector("#reviewProducto")
+let nombreProducto = document.querySelector(".h2Product")
+let  marcaProducto = document.querySelector(".p-product")
+let descripcionProducto = document.querySelector(".descripcionP")
+let precioProducto = document.querySelector(".precioP")
+let categoriaProducto = document.querySelector(".categoriaP")
+let stockProducto = document.querySelector(".stockP")
+let tagsProducto = document.querySelector(".tags")
+let reviewProducto = document.querySelector(".review")
 
 fetch(url) 
 .then(function (response) {
@@ -55,3 +62,20 @@ fetch(url)
 .catch(function (error) {
     console.log(error);
 })
+
+/*--Aside--*/
+fetch(urlCat) 
+    .then(function (response) {
+        return response.json();
+    }) 
+    .then(function (data) {
+        console.log(data);
+        
+        for (let i = 0; i < data.length; i++) {
+            const categoria = data[i];
+            categorias.innerHTML += `<li><a href="./category.html?id=${categoria}">${categoria}</a></li>`
+        }
+    }) 
+    .catch(function (error) {
+        console.log('El error es: ' + error);
+    })
