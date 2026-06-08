@@ -1,16 +1,20 @@
+/* ------------------------------------------------- Main --------------------------------------------------------------------- */
+
 let url1 = 'https://dummyjson.com/products?limit=10';
 let url2 = 'https://dummyjson.com/products?limit=10&skip=10';
 
 let contenedorDestacados = document.querySelector('.productosDestacados');
 let contenedorAleatorios = document.querySelector('.productosAleatorios');
 
-function modificacionHTML(url,contenedor) {
+let urlCat = 'https://dummyjson.com/products/category-list';
+let categorias = document.querySelector('.categorias');
+
+function modificacionMainHTML(url,contenedor) {
     fetch(url)
         .then(function (response) {
             return response.json();
         })
         .then(function (data) {
-            console.log(data)
             const productos = data.products;
 
             for (let i = 0; i < productos.length; i++) {
@@ -32,5 +36,23 @@ function modificacionHTML(url,contenedor) {
         })
 }
 
-modificacionHTML(url1 , contenedorDestacados);
-modificacionHTML(url2 , contenedorAleatorios);
+modificacionMainHTML(url1 , contenedorDestacados);
+modificacionMainHTML(url2 , contenedorAleatorios);
+
+/* ----------------------------------------------- Aside ---------------------------------------------------------------------- */
+
+fetch(urlCat) 
+    .then(function (response) {
+        return response.json();
+    }) 
+    .then(function (data) {
+        console.log(data);
+        
+        for (let i = 0; i < data.length; i++) {
+            const categoria = data[i];
+            categorias.innerHTML += `<li><a href="./category.html?id=${categoria}">${categoria}</a></li>`
+        }
+    }) 
+    .catch(function (error) {
+        console.log('El error es: ' + error);
+    })
