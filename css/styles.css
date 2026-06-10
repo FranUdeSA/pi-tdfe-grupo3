@@ -250,7 +250,7 @@ body {
 .error-feedback-rePassword 
 {
     color: red;
-    font-size: 12px; /* Opcional, para que quede un poco más chico */
+    font-size: 12px; 
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -417,6 +417,15 @@ h1 {
 .sinResultados{
     display: none;
 }
+/*-----------------------Login--------------------------------------*/
+    .errorLogin_usuario, 
+    .errorLogin_contrasena {
+    color: red;
+    display: none;
+    font-size: 12px; 
+    margin-bottom: 10px;
+    font-weight: bold;
+    }
 
 @media (max-width: 480px) {
     /* -------------------------Header-------------------------------------- */
@@ -512,6 +521,7 @@ h1 {
     .review {
         width: 100%;
     }
+    
 
     /* ----------------------Footer------------------------------------- */
     footer {

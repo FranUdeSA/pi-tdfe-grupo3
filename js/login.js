@@ -1,17 +1,47 @@
 let formulario = document.querySelector(".formularioRegistroLogin");
 let usuario = document.querySelector("#correoElectronico");
 let contraseña = document.querySelector("#password");
+let errorUsuario =document.querySelector(".errorLogin_usuario")
+let errorContrasena=document.querySelector(".errorLogin_contrasena")
+let error = false
+
 
 formulario.addEventListener("submit", function(event) {
-    event.preventDefault();
-    let email = usuario.value;
-    let password = contraseña.value;
-    if (email === "" || !email.includes("@") || !email.includes(".") || email.length < 10) {
-        alert("Por favor, ingresa un correo electrónico válido.");
-    } else if (password === "" || password.length < 8) {
-        alert("Por favor, ingresa una contraseña de al menos 8 caracteres.");
+    error = false
+
+    event.preventDefault(); 
+    if (usuario.value == "") {
+        errorUsuario.style.display = 'block';
+        errorUsuario.innerText = 'El campo no puede quedar vacío';
+        error = true;
     }
-    else {
-        window.location.href = "./index.html";
+    if (!usuario.value.includes("@")) {
+        errorUsuario.style.display = 'block';
+        errorUsuario.innerText = 'El campo debe contener un @';
+        error = true;
+    }
+    if (!usuario.value.includes(".")) {
+        errorUsuario.style.display = 'block';
+        errorUsuario.innerText = 'El campo debe contener un punto (".")';
+        error = true;
+    }
+    if (usuario.value.length < 10) {
+        errorUsuario.style.display = 'block';
+        errorUsuario.innerText = 'El campo debe tener mas de 10 caracteres';
+        error = true;
+    }
+    if (contraseña.value == "") {
+        errorContrasena.style.display = 'block';
+        errorContrasena.innerText = 'El campo no puede quedar vacío';
+        error = true;
+    } else if (contraseña.value.length < 8) {
+        errorContrasena.style.display = 'block';
+        errorContrasena.innerText = 'La contraseña debe tener al menos 8 caracteres';
+        error = true;
+    }
+    if (error == false) {
+    localStorage.setItem("contraseña",contraseña.value)
+    localStorage.setItem("usuario",usuario.value)
+    window.location.href = "./index.html";    
     }
 });
