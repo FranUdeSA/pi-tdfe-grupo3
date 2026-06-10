@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <a href="./index.html"><img src="./img/logo.png" alt="logo de negocio"></a>
+        </section>
+
+        <nav class="contenedorPadreNavegacion">
+            <ul class="barraNavegacion">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./registro.html">Registro</a></li>
+            </ul>
+        </nav> 
+        
+        <form class="contenedorBarraBuscar" action="./resultadosBusqueda.html" method="get">  
+            <input type="search" name="barrabuscar" placeholder="Buscar..." id="buscar"> 
+            <button type=" submit">Enviar</button>
+        </form>  
+            
+    </header>
+
+    <!-- ------------------------------------ main ----------------------------------------------------------------->
+    
+    <section class="contenedorMainAside">
+        <main>
+            <h2 class="titulosHome">Productos destacados</h2>
+            <section class="productosDestacados" >
+            </section>
+
+            <h2 class="titulosHome">Productos aleatorios</h2>
+            <section class="productosAleatorios">
+            </section>
+        </main>
+        <!-- ------------------------------- Aside ---------------------------------------------------------------------- -->
+        <aside>
+            <section class="navegacionLateral">
+                <h2 id=tituloCategorias>Categorías</h2>
+                <ul class="categorias">
+                </ul>
+            </section>
+        </aside>
+    </section>
+
+    <!-- ---------------------------------- Footer ---------------------------------------------------------------- -->
+
+    <footer>
+        <ul class="nombresPieDePagina">
+            <li>Franco Dragani</li>
+            <li>Michelle Zac</li>
+            <li>Joaquin Pedernera</li>
+        </ul>
+        <section class="udesaDigitalHouse">
+            <img src="./img/UdeSA.png" alt="Universidad de San Andrés">
+            <img src="./img/digitalHouse.png" alt="Digital House">
+        </section>
+    </footer>
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

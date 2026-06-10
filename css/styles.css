@@ -1,0 +1,558 @@
+/* -------------------------------------Universal----------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ----------------------------------------Header------------------------------------------------- */
+header {
+    display: flex;
+    height: 100px;
+    margin: 1.5%;
+    background-color: rgba(142, 123, 39, 0.345);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.logo img {
+    height: 100%;
+    border-radius: 50px;
+}
+
+
+.contenedorPadreNavegacion {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.barraNavegacion {
+    display: flex;
+    margin: 15px;
+}
+
+.barraNavegacion li {
+    padding: 10px;
+    font-weight: 400;
+}
+
+.contenedorBarraBuscar{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+}
+
+/* ----------------------------------------Main------------------------------------------------- */
+main {
+    margin: 3% 5% 3% 1.5%;
+    width: 75%;
+}
+
+.titulosHome {
+    display: flex;
+    justify-content: center;
+    color: rgb(101, 62, 11);
+    background-color: rgba(118, 108, 75, 0.481);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* 1er sección: productos destacados */
+.productosDestacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+/* 2da sección: productos aleatorios */
+.productosAleatorios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+article {
+    width: 30%;
+    margin: 15px 0px;
+}
+
+h3,
+h4 {
+    padding: 5px 0px;
+    margin-bottom: 5px;
+}
+
+.verDetalle {
+    background-color: peru;
+    padding: 5px 2px;
+}
+
+/* -------------------------------------------Aside------------------------------------------------------ */
+.contenedorMainAside {
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+    margin-top: 3%;
+}
+
+.navegacionLateral {
+    background-color: rgb(146 114 9 / 42%);
+    border-radius: 10px;
+}
+
+#tituloCategorias {
+    color: rgb(101, 62, 11);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 5px 15px 5px;
+}
+
+.categorias li {
+    margin: 4px 0px;
+}
+
+/* ----------------------------------------Pie de página------------------------------------------------- */
+footer {
+    display: flex;
+    margin: 1.5%;
+    height: 90px;
+    background-color: rgba(142, 123, 39, 0.345);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.nombresPieDePagina {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.nombresPieDePagina li {
+    padding: 0px 10px;
+    font-weight: 500;
+}
+
+.udesaDigitalHouse {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.udesaDigitalHouse img {
+    height: 100%;
+    border-radius: 50px;
+}
+
+/* --------------------------------------------------Forms (registro)------------------------------------------------- */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#tituloPrimerNivel {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 30px;
+    color: #304b00;
+}
+
+.contenedorPadreFormulario {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formularioRegistroLogin {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 25px;
+    padding: 60px 80px;
+    background-color: #304b0080;
+    border-radius: 20px;
+}
+
+.informacionIndividual {
+    display: block;
+    font-weight: 600;
+}
+
+.mail {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    padding: 4px;
+}
+
+.contrasenna {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    padding: 4px;
+}
+
+#condiciones {
+    font-size: 15px;
+}
+
+.contenedorRegistro {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.botonRegistro {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f6fff6;
+}
+
+#tengoCuenta {
+    color: #0b42b9;
+}
+
+.error-feedback-mail, 
+.error-feedback-password, 
+.error-feedback-rePassword 
+{
+    color: red;
+    font-size: 12px; 
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------Product------------------------------------------------------ */
+.titulosProduct {
+    display: flex;
+    justify-content: center;
+    color: rgb(101, 62, 11);
+    background-color: rgba(118, 108, 75, 0.481);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.todoP {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.imagenP {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.h2Product {
+    display: flex;
+    flex-direction: column;
+    width: 25%;                             /* Por este. */
+}
+h2.h2Product {
+    display: flex;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    background-color: rgba(118, 108, 75, 0.481);  /* Por qué dos selectores .h2Product y h2.h2Product? No es redundante? */
+    width: auto;
+}
+.p-product {
+    display: flex;
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 42%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
+}
+
+.descripcionP {
+    display: flex;
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    background-color: rgba(118, 108, 75, 0.481);
+}
+
+.precioP {
+    display: flex;
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 30%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
+    font-weight: bold
+}
+
+.categoriaP {
+    display: flex;
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 40%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
+}
+
+.stockP {
+    display: flex;
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 51%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
+}
+.contenidoTexto {
+    width:60%;
+}
+
+ul.tags {
+    display: flex;
+}
+
+ul.tags li {
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 51%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
+}
+.review{
+    padding: 10px;
+    border: 3px solid rgb(101, 62, 11);
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgba(118, 108, 75, 0.481);
+}
+.reviewForm {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    width: 50%;
+}
+
+/*------------------------------------Login--------------------------------------------------*/
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 30px;
+    color: #304b00;
+}
+
+.textoLogin {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0px 5px 0px;
+    font-size: 15px;
+    color: #304b00;
+    font-weight: bold;
+}
+.botonSubmit {
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.contenedorBuscador {
+    display: flex;
+    height: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgba(142, 123, 39, 0.345);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    align-items: center;
+    margin: 1.5%;
+
+}
+
+.inputBuscador {
+    height: 30px;
+    width: 200px;
+}
+
+.sinResultados{
+    display: none;
+}
+/*-----------------------Login--------------------------------------*/
+    .errorLogin_usuario, 
+    .errorLogin_contrasena {
+    color: red;
+    display: none;
+    font-size: 12px; 
+    margin-bottom: 10px;
+    font-weight: bold;
+    }
+
+@media (max-width: 480px) {
+    /* -------------------------Header-------------------------------------- */
+    header{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        margin: 0 25%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    
+    .logo img {
+        height: 80px;
+    }
+
+    .contenedorPadreNavegacion {
+        justify-content: center;
+    }
+
+    .barraNavegacion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedorBarraBuscar {
+        padding-bottom: 5px;
+        width: 60%;
+    } 
+
+    #buscar {
+        font-weight: bold;
+    }
+
+
+    /* --------------------------------Producto-------------------------------- */
+
+    .productosDestacados {
+        flex-direction: column;
+
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .navegacionLateral {
+        padding: 5px;
+    }
+
+    .todoP {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenP {
+        width: 100%;
+        margin-right: 0px;
+    }
+    
+    .h2Product {
+        width: 100%;
+    }
+
+    .p-product{
+        width: 100%;
+    }
+
+    .descripcionP{
+        width: 100%;
+    }
+
+    .precioP{
+        width: 100%;
+    }
+
+    .categoriaP{
+        width: 100%;
+    }
+
+    .stockP{
+        width: 100%;
+    }
+
+    ul.tags{
+    flex-direction: column;
+    }
+
+    ul.tags li {
+        width: 100%;
+    }
+
+    .review {
+        width: 100%;
+    }
+    
+
+    /* ----------------------Footer------------------------------------- */
+    footer {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 12%;
+        width: 75%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+    .nombresPieDePagina {
+        margin-top: 10px;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .nombresPieDePagina li {
+        padding: 10px 0px;
+    }
+    .udesaDigitalHouse {
+        margin: 15px 0px;
+        justify-content: center;
+        width: 100%;
+    }
+    .udesaDigitalHouse img {
+        width: 20%;
+    }
+
+    /* ------------------Registro------------------------------- */
+    .formularioRegistroLogin {
+        width: 85%;
+        margin-bottom: 40px;
+    }
+}

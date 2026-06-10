@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+        </section>
+
+        <nav class="contenedorPadreNavegacion">
+            <ul class="barraNavegacion">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./registro.html">Registro</a></li>
+            </ul>
+        </nav> 
+        
+        <form class="contenedorBarraBuscar" action="./resultadosBusqueda.html" method="get">  
+            <input type="search" name="barrabuscar" placeholder="Buscar..." id="buscar"> 
+            <button type=" submit">Enviar</button>
+        </form>  
+    </header>
+    <!-- --------------------------------------------------------------------------------->
+
+    <section class="contenedorPadreFormulario">
+        <h1 id="tituloPrimerNivel">Registrarse</h1>
+        <form class="formularioRegistroLogin" action="./login.html" method="get">
+            <div>
+                <label class="informacionIndividual" for="mail">Email</label>
+                <input type="email" name="mail" value="" id = "email" class="mail">
+                <div class="error-feedback-mail"></div>
+            </div>
+            <div>
+                <label class="informacionIndividual" for="contrasenna">Password</label>
+                <input type="password" name="contrasenna" value="" id = 'password' class="contrasenna">
+                <div class="error-feedback-password"></div>
+            </div>
+            <div>
+                <label class="informacionIndividual" for="contrasennaRepeticion">Repetir contraseña</label>
+                <input type="password" name="contrasennaRepeticion" value="" id = 'rePassword' class="contrasenna">
+                <div class="error-feedback-rePassword"></div>
+            </div>
+            <div>
+                <input type="checkbox" name="condiciones" value="Si" id = 'terminosCondiciones'>
+                <label id="condiciones" for="condiciones">Acepto términos y condiciones</label>
+                <div class="error-feedback-condiciones"></div>
+            </div> 
+            <div class="contenedorRegistro">
+                <button class="botonRegistro" type="submit">Registrarme</button>
+            </div>
+            <a id="tengoCuenta" href="./login.html">Ya tengo una cuenta</a>
+        </form>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------- -->
+    <footer>
+        <ul class="nombresPieDePagina">
+            <li>Franco Dragani</li>
+            <li>Michelle Zac</li>
+            <li>Joaquin Pedernera</li>
+        </ul>
+        <section class="udesaDigitalHouse">
+            <img src="./img/UdeSA.png" alt="Universidad de San Andrés">
+            <img src="./img/digitalHouse.png" alt="Digital House">
+        </section>
+    </footer>
+
+    <script src="./js/registro.js"></script>
+</body>
+
+</html>
