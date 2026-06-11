@@ -1,5 +1,5 @@
 // capturar los elementos como titulo y productos
-let linksCategorias = document.querySelectorAll(".categorias a");
+let linksCategorias = document.querySelectorAll(".categorias li");
 
 let titulo = document.querySelector(".titulosHome");
 let contenedor = document.querySelector(".productosDestacados");
