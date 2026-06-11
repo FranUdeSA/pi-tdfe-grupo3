@@ -43,6 +43,7 @@ fetch(url)
     marcaProducto.innerText = producto.marca
     descripcionProducto.innerText = producto.descripcion
     precioProducto.innerText = producto.precio
+    categoriaProducto.href = `./category.html?id=${producto.categoria}`
     categoriaProducto.innerText = producto.categoria
     stockProducto.innerText = producto.stock
     tagsProducto.innerHTML = ""
