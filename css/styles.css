@@ -250,7 +250,7 @@ body {
 .error-feedback-rePassword 
 {
     color: red;
-    font-size: 12px; /* Opcional, para que quede un poco más chico */
+    font-size: 12px; /* un poco más chico */
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -287,7 +287,7 @@ h2.h2Product {
     border-radius: 15px;
     padding: 10px;
     border: 3px solid rgb(101, 62, 11);
-    background-color: rgba(118, 108, 75, 0.481);  /* Por qué dos selectores .h2Product y h2.h2Product? No es redundante? */
+    background-color: rgba(118, 108, 75, 0.481);
     width: auto;
 }
 .p-product {

@@ -40,5 +40,7 @@ formulario.addEventListener('submit', function (event) {
 
     if (error == false) {
         formulario.submit();
+        localStorage.setItem('usuario', email.value);
+        localStorage.setItem('password', password.value);
     }
 })
