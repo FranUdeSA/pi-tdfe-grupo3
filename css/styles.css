@@ -420,7 +420,8 @@ h1 {
 }
 /*-----------------------Login--------------------------------------*/
     .errorLogin_usuario, 
-    .errorLogin_contrasena {
+    .errorLogin_contrasena
+    .errorGeneral {
     color: red;
     display: none;
     font-size: 12px; 

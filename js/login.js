@@ -4,7 +4,7 @@ let contraseña = document.querySelector("#password");
 let errorUsuario =document.querySelector(".errorLogin_usuario")
 let errorContrasena=document.querySelector(".errorLogin_contrasena")
 let error = false
-
+let errorGeneral = document.querySelector(".errorGeneral")
 
 formulario.addEventListener("submit", function(event) {
     error = false
@@ -40,8 +40,16 @@ formulario.addEventListener("submit", function(event) {
         error = true;
     }
     if (error == false) {
-    localStorage.setItem("contraseña",contraseña.value)
-    localStorage.setItem("usuario",usuario.value)
-    window.location.href = "./index.html";    
+        let usuarioGuardado = localStorage.getItem("usuario")
+        let passwordGuardado = localStorage.getItem("password")
+        if (usuario.value === usuarioGuardado && contraseña.value === passwordGuardado) {
+        window.location.href = "./index.html";    
+        }else{
+        errorGeneral.style.display='block'
+        errorGeneral.innerText = "No existe ningun usuario, porfavor Registrese."
+        error = true
+        }
+
+        
     }
 });
