@@ -15,16 +15,6 @@ formulario.addEventListener("submit", function(event) {
         errorUsuario.innerText = 'El campo no puede quedar vacío';
         error = true;
     }
-    if (!usuario.value.includes("@")) {
-        errorUsuario.style.display = 'block';
-        errorUsuario.innerText = 'El campo debe contener un @';
-        error = true;
-    }
-    if (!usuario.value.includes(".")) {
-        errorUsuario.style.display = 'block';
-        errorUsuario.innerText = 'El campo debe contener un punto (".")';
-        error = true;
-    }
     if (usuario.value.length < 10) {
         errorUsuario.style.display = 'block';
         errorUsuario.innerText = 'El campo debe tener mas de 10 caracteres';
@@ -38,18 +28,16 @@ formulario.addEventListener("submit", function(event) {
         errorContrasena.style.display = 'block';
         errorContrasena.innerText = 'La contraseña debe tener al menos 8 caracteres';
         error = true;
-    }
+    }z
     if (error == false) {
         let usuarioGuardado = localStorage.getItem("usuario")
         let passwordGuardado = localStorage.getItem("password")
         if (usuario.value === usuarioGuardado && contraseña.value === passwordGuardado) {
-        window.location.href = "./index.html";    
+            formulario.submit();    
         }else{
         errorGeneral.style.display='block'
-        errorGeneral.innerText = "No existe ningun usuario, porfavor Registrese."
+        errorGeneral.innerText = "El usuario o la contraseña son invalidos."
         error = true
-        }
-
-        
+        }        
     }
 });
