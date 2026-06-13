@@ -28,7 +28,7 @@ formulario.addEventListener("submit", function(event) {
         errorContrasena.style.display = 'block';
         errorContrasena.innerText = 'La contraseña debe tener al menos 8 caracteres';
         error = true;
-    }z
+    }
     if (error == false) {
         let usuarioGuardado = localStorage.getItem("usuario")
         let passwordGuardado = localStorage.getItem("password")

@@ -47,9 +47,11 @@ fetch(url)
     categoriaProducto.innerText = producto.categoria
     stockProducto.innerText = producto.stock
     tagsProducto.innerHTML = ""
+    
     for (let i = 0; i < producto.tags.length; i++) {
         tagsProducto.innerHTML += `<li>${producto.tags[i]}</li>`
     }
+    
     reviewProducto.innerHTML = ""
     for (let i = 0; i < producto.reviews.length; i++) {
         reviewProducto.innerHTML += `<section>

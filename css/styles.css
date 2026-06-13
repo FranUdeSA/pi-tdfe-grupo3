@@ -50,6 +50,11 @@ header {
     font-weight: 400;
 }
 
+.bienvenidoUsuario, 
+.logoutUsuario {
+    display: none;
+}
+
 .contenedorBarraBuscar{    
     display: flex;
     flex-direction: column;
