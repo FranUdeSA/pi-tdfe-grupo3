@@ -1,30 +1,56 @@
 // capturar los elementos como titulo y productos
-let linksCategorias = document.querySelectorAll(".categorias li");
 
 let titulo = document.querySelector(".titulosHome");
 let contenedor = document.querySelector(".productosDestacados");
-let categoria = localStorage.getItem("categoria");
-let urlCat = "https://dummyjson.com/products/category";
+let categorias = document.querySelector(".categorias");
+let categoria = localStorage.getItem("categoria");  
+let linksCategorias = document.querySelectorAll(".categorias li");
 
-titulo.innerText = "categoria " + categoria;
+let urlCategorias = "https://dummyjson.com/products/category-list";
+let urlCategory = "https://dummyjson.com/products/category";
+
+titulo.innerHTML = "<h2>Categorías</h2>"; 
 contenedor.innerHTML = "";
 
-for (let i = 0; i < linksCategorias.length; i++) {
-    linksCategorias[i].addEventListener("click", function(evento) {
-        evento.preventDefault();
-
-        let categoriaElegida = this.innerText;
-        localStorage.setItem("categoria", categoriaElegida);
-
-        location.href = "./category.html";
-    });
-}
-
-fetch(`${urlCat}/${categoria}`)
+/*--Aside--*/
+fetch(urlCategorias)
     .then(function(response) {
         return response.json();
     })
     .then(function(data) {
+
+        // creacion <li> categorias
+        for (let i = 0; i < data.length; i++) {
+            const cat = data[i];
+            categorias.innerHTML += `<li><a href="./category.html">${cat}</a></li>`;
+        }
+        // agregación de listeners
+        let linksCategorias = document.querySelectorAll(".categorias li");
+        for (let i = 0; i < linksCategorias.length; i++) {
+            linksCategorias[i].addEventListener("click", function(evento) {
+                evento.preventDefault();
+                let categoriaElegida = this.innerText;
+                localStorage.setItem("categoria", categoriaElegida);
+                location.href = "./category.html";
+            });
+        }
+    })
+    .catch(function(error) {
+        console.log('El error es: ' + error);
+    });
+
+// carga categoría seleccionada 
+fetch(`${urlCategory}/${categoria}`)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        titulo.innerHTML = `<h2>${categoria}</h2>`;
+
+        if (data.products.length === 0) {
+        contenedor.innerHTML = `<p>No hay productos disponibles en esta categoría.</p>`;  
+            return;
+        }
         const productos = data.products;
 
         for (let i = 0; i < productos.length; i++) {

@@ -15,18 +15,13 @@ formulario.addEventListener("submit", function(event) {
         errorUsuario.innerText = 'El campo no puede quedar vacío';
         error = true;
     }
-    if (usuario.value.length < 10) {
-        errorUsuario.style.display = 'block';
-        errorUsuario.innerText = 'El campo debe tener mas de 10 caracteres';
-        error = true;
-    }
     if (contraseña.value == "") {
         errorContrasena.style.display = 'block';
         errorContrasena.innerText = 'El campo no puede quedar vacío';
         error = true;
-    } else if (contraseña.value.length < 8) {
+    } else if (contraseña.value.length < 6) {
         errorContrasena.style.display = 'block';
-        errorContrasena.innerText = 'La contraseña debe tener al menos 8 caracteres';
+        errorContrasena.innerText = 'La contraseña debe tener al menos 6 caracteres';
         error = true;
     }
     if (error == false) {
