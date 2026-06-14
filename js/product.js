@@ -82,3 +82,4 @@ fetch(urlCat)
     .catch(function (error) {
         console.log('El error es: ' + error);
     })
+
