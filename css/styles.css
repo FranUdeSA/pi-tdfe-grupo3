@@ -107,6 +107,9 @@ h4 {
 .verDetalle {
     background-color: peru;
     padding: 5px 2px;
+    margin-top: 10px;
+    display: block;
+    width: 35%;
 }
 
 /* -------------------------------------------Aside------------------------------------------------------ */

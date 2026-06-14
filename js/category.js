@@ -1,72 +1,54 @@
-// capturar los elementos como titulo y productos
+/*--API--*/
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let idCategoria = queryStringObj.get('id');
+let url = `https://dummyjson.com/products/category/${idCategoria}`;
 
-let titulo = document.querySelector(".titulosHome");
-let contenedor = document.querySelector(".productosDestacados");
-let categorias = document.querySelector(".categorias");
-let categoria = localStorage.getItem("categoria");  
-let linksCategorias = document.querySelectorAll(".categorias li");
+/*--Api para el Aside--*/
+let urlCat = 'https://dummyjson.com/products/category-list';
+let categorias = document.querySelector('.categorias');
 
-let urlCategorias = "https://dummyjson.com/products/category-list";
-let urlCategory = "https://dummyjson.com/products/category";
+let titulo = document.querySelector(".titulosHome")
+let contenedorProductos = document.querySelector(".productosDestacados")
+fetch(url)
+    .then(function (response) {
+       return response.json();
+    })
+    .then(function (data) {
+        titulo.innerText = idCategoria;
 
-titulo.innerHTML = "<h2>Categorías</h2>"; 
-contenedor.innerHTML = "";
+        let productos = data.products;
+        let productosDeCategoria = "";
+        for (let i = 0; i < productos.length; i++) {
+            const element = productos[i];
+            productosDeCategoria += `<article>
+            <img src="${element.thumbnail}" alt="${element.title}">
+            <h3>${element.title}</h3>
+            <h3>$${element.price}</h3>
+            <p>${element.description}</p>
+            <a href="./product.html?id=${element.id}"class=verDetalle >VER DETALLE</a>
+            </article>`
+    }
+    contenedorProductos.innerHTML = productosDeCategoria;
+
+})
+.catch(function (error) {
+    console.log("Error:" + error )
+})
 
 /*--Aside--*/
-fetch(urlCategorias)
-    .then(function(response) {
+fetch(urlCat) 
+    .then(function (response) {
         return response.json();
-    })
-    .then(function(data) {
-
-        // creacion <li> categorias
+    }) 
+    .then(function (data) {
+        console.log(data);
+        
         for (let i = 0; i < data.length; i++) {
-            const cat = data[i];
-            categorias.innerHTML += `<li><a href="./category.html">${cat}</a></li>`;
+            const categoria = data[i];
+            categorias.innerHTML += `<li><a href="./category.html?id=${categoria}">${categoria}</a></li>`
         }
-        // agregación de listeners
-        let linksCategorias = document.querySelectorAll(".categorias li");
-        for (let i = 0; i < linksCategorias.length; i++) {
-            linksCategorias[i].addEventListener("click", function(evento) {
-                evento.preventDefault();
-                let categoriaElegida = this.innerText;
-                localStorage.setItem("categoria", categoriaElegida);
-                location.href = "./category.html";
-            });
-        }
-    })
-    .catch(function(error) {
+    }) 
+    .catch(function (error) {
         console.log('El error es: ' + error);
-    });
-
-// carga categoría seleccionada 
-fetch(`${urlCategory}/${categoria}`)
-    .then(function(response) {
-        return response.json();
     })
-    .then(function(data) {
-        titulo.innerHTML = `<h2>${categoria}</h2>`;
-
-        if (data.products.length === 0) {
-        contenedor.innerHTML = `<p>No hay productos disponibles en esta categoría.</p>`;  
-            return;
-        }
-        const productos = data.products;
-
-        for (let i = 0; i < productos.length; i++) {
-            contenedor.innerHTML += `
-                <article>
-                    <img src="${productos[i].thumbnail}" alt="">
-                    <h3>${productos[i].title}</h3>
-                    <p>${productos[i].description}</p>
-                    <h4>${productos[i].price}</h4>
-                    <span class="verDetalle">
-                        <a href="./product.html?id=${productos[i].id}">Ver detalle</a>
-                    </span>
-                </article>
-            `;
-        }
-    })
-    .catch(function(error) {
-        console.log("El error es: " + error);
-    });
