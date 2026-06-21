@@ -4,7 +4,7 @@ let logoutOut = document.querySelector('.logoutUsuario');
 let loginNavIn = document.querySelector('.loginNav');
 let registroNavIn = document.querySelector('.registroNav');
 
-logout.addEventListener('click', function() {
+logoutOut.addEventListener('click', function(event) {
     
     event.preventDefault();
 
